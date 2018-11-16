@@ -1,4 +1,6 @@
-package main;
+package main.cars;
+import main.Perpendicular;
+
 import java.awt.*;
 
 public class Saab95 extends Car{

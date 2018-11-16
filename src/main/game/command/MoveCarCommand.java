@@ -2,7 +2,7 @@ package main.game.command;
 
 import java.util.ArrayList;
 
-import main.Car;
+import main.cars.Car;
 import main.game.GameMap;
 
 public class MoveCarCommand extends Command{

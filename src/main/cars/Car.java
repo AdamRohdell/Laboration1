@@ -1,4 +1,7 @@
-package main;
+package main.cars;
+
+import main.Direction;
+import main.IMoveable;
 
 import java.awt.*;
 

@@ -1,7 +1,9 @@
 package test;
 
 import static org.junit.Assert.*;
-import main.*;
+
+import main.cars.Car;
+import main.cars.Volvo240;
 import org.junit.Test;
 
 import java.awt.*;

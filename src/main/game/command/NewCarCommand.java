@@ -2,8 +2,8 @@ package main.game.command;
 
 import java.awt.Point;
 
-import main.Car;
-import main.Volvo240;
+import main.cars.Car;
+import main.cars.Volvo240;
 import main.game.GameMap;
 
 public class NewCarCommand extends Command {

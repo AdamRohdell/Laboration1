@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import main.Volvo240;
+import main.cars.Volvo240;
 
 import java.awt.*;
 
