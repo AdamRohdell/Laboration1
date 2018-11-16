@@ -1,0 +1,95 @@
+package test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import main.Volvo240;
+
+import java.awt.*;
+
+public class Volvo240Test {
+
+	@Test
+	public void testSpeedFactor() {
+		Volvo240 volvo = new Volvo240();
+		assertEquals(1.25, volvo.speedFactor(), 0.0);
+	}
+
+
+	
+	@Test
+	public void testGas() {
+		Volvo240 volvo = new Volvo240();
+		volvo.gas(-40);
+		assertTrue(volvo.getCurrentSpeed() >= 0);
+	}
+
+	@Test
+	public void testTurnLeft() {
+		// turn left 4 times shall mean that we are back to 0 deg
+		Volvo240 volvo = new Volvo240();
+
+		assertEquals(0, volvo.getDirection().getAngle(), 0);
+		volvo.turnLeft();
+		assertEquals(3, volvo.getDirection().getAngle(), 0);
+		volvo.turnLeft();
+		assertEquals(2, volvo.getDirection().getAngle(), 0);
+		volvo.turnLeft();
+		assertEquals(1, volvo.getDirection().getAngle(), 0);
+		volvo.turnLeft();
+		assertEquals(0, volvo.getDirection().getAngle(), 0);
+
+	}
+
+	@Test
+	public void testTurnRight() {
+		Volvo240 volvo = new Volvo240();
+
+		assertEquals(0, volvo.getDirection().getAngle(), 0);
+		volvo.turnRight();
+		assertEquals(1, volvo.getDirection().getAngle(), 0);
+		volvo.turnRight();
+		assertEquals(2, volvo.getDirection().getAngle(), 0);
+		volvo.turnRight();
+		assertEquals(3, volvo.getDirection().getAngle(), 0);
+		volvo.turnRight();
+		assertEquals(0, volvo.getDirection().getAngle(), 0);
+	}
+
+	@Test
+	public void testMove() {
+		Volvo240 volvo = new Volvo240();
+		volvo.point = new Point(0,0);
+		assertEquals(volvo.point.x, 0, 0);
+		volvo.move();
+		assertEquals(volvo.point.x += volvo.getCurrentSpeed(), volvo.point.x, 0);
+	}
+
+
+	@Test
+	public void testGetCurrentSpeed() {
+		Volvo240 volvo = new Volvo240();
+		//speed shall be 0 from start
+		assertEquals(0, volvo.getCurrentSpeed(),0);
+	}
+
+	@Test
+	public void testIncrementSpeed() {
+		Volvo240 volvo = new Volvo240();
+		int speedAmount = 10;
+		volvo.incrementSpeed(speedAmount);
+		assertEquals(10*1.25, volvo.getCurrentSpeed(), 0);
+	}
+
+	//Make sure that speed can not be decremented to less than 0.
+	@Test
+	public void testDecrementSpeed() {
+		Volvo240 volvo = new Volvo240();
+		if(volvo.getCurrentSpeed() == 0) {
+			volvo.decrementSpeed(40);
+			assertFalse(volvo.getCurrentSpeed() < 0);
+		}
+	}
+
+}
