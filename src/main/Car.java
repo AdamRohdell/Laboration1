@@ -73,6 +73,7 @@ public abstract class Car implements IMoveable {
 			currentSpeed = enginePower;
 		}
 	}
+	//hälsning till adam
 
 	/**
 	 * Used to decrement current speed
