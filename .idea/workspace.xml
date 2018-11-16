@@ -2,7 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a427973-45b1-4241-a8b9-f4f8c6a33fd8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Laboration1/main/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Laboration1/main/Direction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Laboration1/main/IMoveable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Laboration1/main/Perpendicular.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Laboration1/main/Saab95.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Laboration1/main/Volvo240.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Laboration1/main/game/CarGame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Laboration1/main/game/GameMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Laboration1/main/game/command/Command.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Laboration1/main/game/command/DrawMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Laboration1/main/game/command/MoveCarCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Laboration1/main/game/command/NewCarCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Laboration1/test/CarTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Laboration1/test/Saab95Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Laboration1/test/Volvo240Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/game/command/MoveCarCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/game/command/MoveCarCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/CarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/CarTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Volvo240Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Volvo240Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -103,32 +121,33 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="21" />
+          <entry key="java" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="21" />
+          <entry key="JAVA" value="27" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="6" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/Car.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="90" column="34" selection-start-line="90" selection-start-column="34" selection-end-line="90" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/CarTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="945">
-              <caret line="67" column="24" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
+            <state relative-caret-position="240">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -136,47 +155,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/IMoveable.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/Volvo240Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Volvo240.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Direction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Saab95.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="48" column="33" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Perpendicular.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+            <state relative-caret-position="395">
+              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -205,10 +191,11 @@
         <option value="$PROJECT_DIR$/src/main/game/command/NewCarCommand.java" />
         <option value="$PROJECT_DIR$/src/main/Saab95.java" />
         <option value="$PROJECT_DIR$/src/main/Volvo240.java" />
-        <option value="$PROJECT_DIR$/src/test/Volvo240Test.java" />
-        <option value="$PROJECT_DIR$/src/test/CarTest.java" />
         <option value="$PROJECT_DIR$/src/main/Perpendicular.java" />
         <option value="$PROJECT_DIR$/src/main/Car.java" />
+        <option value="$PROJECT_DIR$/src/main/game/command/MoveCarCommand.java" />
+        <option value="$PROJECT_DIR$/src/test/CarTest.java" />
+        <option value="$PROJECT_DIR$/src/test/Volvo240Test.java" />
       </list>
     </option>
   </component>
@@ -219,8 +206,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="368" />
-    <option name="y" value="68" />
+    <option name="x" value="616" />
+    <option name="y" value="159" />
     <option name="width" value="1195" />
     <option name="height" value="935" />
   </component>
@@ -253,6 +240,21 @@
               <item name="Laboration1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Laboration1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Laboration1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Laboration1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="command" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Laboration1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Laboration1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -268,9 +270,13 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542359634794" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542360886853" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -388,7 +394,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541678756124</updated>
-      <workItem from="1542360310194" duration="8000" />
+      <workItem from="1542360310194" duration="501000" />
     </task>
     <servers />
   </component>
@@ -425,10 +431,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8000" />
+    <option name="totallyTimeSpent" value="501000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="368" y="68" width="1195" height="935" extended-state="0" />
+    <frame x="616" y="159" width="1195" height="935" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2584562" />
@@ -439,7 +445,7 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="0" />
+      <window_info anchor="bottom" id="Messages" order="0" visible="true" weight="0.32977462" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32907802" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.49787235" />
@@ -520,13 +526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Volvo240Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="36" column="18" lean-forward="true" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Saab95Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -539,18 +538,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Car.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="90" column="34" selection-start-line="90" selection-start-column="34" selection-end-line="90" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/CarTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="67" column="24" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="70" column="11" selection-start-line="70" selection-start-column="11" selection-end-line="70" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -575,6 +564,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Perpendicular.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/util/function/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/game/command/MoveCarCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Saab95.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
@@ -582,10 +592,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Perpendicular.java">
+    <entry file="file://$PROJECT_DIR$/src/test/CarTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Volvo240Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

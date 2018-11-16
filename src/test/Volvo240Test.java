@@ -74,22 +74,5 @@ public class Volvo240Test {
 		assertEquals(0, volvo.getCurrentSpeed(),0);
 	}
 
-	@Test
-	public void testIncrementSpeed() {
-		Volvo240 volvo = new Volvo240();
-		int speedAmount = 10;
-		volvo.incrementSpeed(speedAmount);
-		assertEquals(10*1.25, volvo.getCurrentSpeed(), 0);
-	}
-
-	//Make sure that speed can not be decremented to less than 0.
-	@Test
-	public void testDecrementSpeed() {
-		Volvo240 volvo = new Volvo240();
-		if(volvo.getCurrentSpeed() == 0) {
-			volvo.decrementSpeed(40);
-			assertFalse(volvo.getCurrentSpeed() < 0);
-		}
-	}
 
 }

@@ -17,7 +17,7 @@ public class MoveCarCommand extends Command{
 		ArrayList<Car> cars = gameMap.getCars();
 		if(cars != null && cars.size() != 0) {
 			cars.forEach(car -> {
-				car.incrementSpeed(1);
+				car.gas(1);
 				car.move();
 			});
 		}
