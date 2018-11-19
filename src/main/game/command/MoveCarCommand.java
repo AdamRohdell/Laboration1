@@ -16,7 +16,11 @@ public class MoveCarCommand extends Command{
 	public void execute(GameMap gameMap, String command) {
 		ArrayList<Car> cars = gameMap.getCars();
 		if(cars != null && cars.size() != 0) {
+
 			cars.forEach(car -> {
+				if(car.getCurrentSpeed() == 0){
+					car.startEngine();
+				}
 				car.gas(1);
 				car.move();
 			});

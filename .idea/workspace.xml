@@ -3,24 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9a427973-45b1-4241-a8b9-f4f8c6a33fd8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Laboration1/main/Car.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Laboration1/main/Direction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Laboration1/main/IMoveable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Laboration1/main/Perpendicular.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Laboration1/main/Saab95.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Laboration1/main/Volvo240.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Laboration1/main/game/CarGame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Laboration1/main/game/GameMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Laboration1/main/game/command/Command.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Laboration1/main/game/command/DrawMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Laboration1/main/game/command/MoveCarCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Laboration1/main/game/command/NewCarCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Laboration1/test/CarTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Laboration1/test/Saab95Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Laboration1/test/Volvo240Test.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/game/command/MoveCarCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/game/command/MoveCarCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/CarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/CarTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Volvo240Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Volvo240Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -115,39 +98,55 @@
     <session id="1916956422">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="27" />
+          <entry key="java" value="61" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="27" />
+          <entry key="JAVA" value="61" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="6" />
+          <entry key="java" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="6" />
+          <entry key="JAVA" value="10" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.spring.boot.mvc.usages" />
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.spring.boot.run.usages" />
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Car.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="870">
+              <caret line="68" column="17" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/CarTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="180">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -155,14 +154,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/Volvo240Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+            <state relative-caret-position="945">
+              <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/game/command/MoveCarCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/Scania.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -193,9 +210,9 @@
         <option value="$PROJECT_DIR$/src/main/Volvo240.java" />
         <option value="$PROJECT_DIR$/src/main/Perpendicular.java" />
         <option value="$PROJECT_DIR$/src/main/Car.java" />
-        <option value="$PROJECT_DIR$/src/main/game/command/MoveCarCommand.java" />
         <option value="$PROJECT_DIR$/src/test/CarTest.java" />
         <option value="$PROJECT_DIR$/src/test/Volvo240Test.java" />
+        <option value="$PROJECT_DIR$/src/main/game/command/MoveCarCommand.java" />
       </list>
     </option>
   </component>
@@ -206,8 +223,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="616" />
-    <option name="y" value="159" />
+    <option name="y" value="234" />
     <option name="width" value="1195" />
     <option name="height" value="935" />
   </component>
@@ -240,21 +256,6 @@
               <item name="Laboration1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Laboration1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Laboration1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Laboration1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="command" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Laboration1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Laboration1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -270,7 +271,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542360886853" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542361191918" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -290,7 +291,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.test in Laboration1">
+  <component name="RunManager" selected="Application.CarGame">
+    <configuration name="CarGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.game.CarGame" />
+      <module name="Laboration1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CarTest.testBrake" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Laboration1" />
       <extension name="coverage">
@@ -317,22 +331,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.Volvo240Test" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Volvo240Test.testTurnLeft" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Laboration1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.Volvo240Test" />
-      <option name="METHOD_NAME" value="testTurnLeft" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -370,17 +368,17 @@
     <list>
       <item itemvalue="JUnit.Volvo240Test.testTurnRight" />
       <item itemvalue="JUnit.Volvo240Test" />
-      <item itemvalue="JUnit.Volvo240Test.testTurnLeft" />
       <item itemvalue="JUnit.test in Laboration1" />
       <item itemvalue="JUnit.CarTest.testBrake" />
+      <item itemvalue="Application.CarGame" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CarGame" />
         <item itemvalue="JUnit.test in Laboration1" />
         <item itemvalue="JUnit.CarTest.testBrake" />
         <item itemvalue="JUnit.Volvo240Test" />
         <item itemvalue="JUnit.Volvo240Test.testTurnRight" />
-        <item itemvalue="JUnit.Volvo240Test.testTurnLeft" />
       </list>
     </recent_temporary>
   </component>
@@ -394,14 +392,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541678756124</updated>
-      <workItem from="1542360310194" duration="501000" />
+      <workItem from="1542360310194" duration="1253000" />
+      <workItem from="1542451766977" duration="20000" />
+      <workItem from="1542619266073" duration="242000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Volvo240Test - 2018.11.12 at 16h 18m 03s.xml">
-      <configuration name="Volvo240Test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Volvo240Test_testTurnRight - 2018.11.14 at 13h 13m 44s.xml">
       <configuration name="Volvo240Test.testTurnRight" configurationId="JUnit" />
     </history-entry>
@@ -429,26 +426,27 @@
     <history-entry file="test_in_Laboration1 - 2018.11.15 at 14h 47m 26s.xml">
       <configuration name="test in Laboration1" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="test_in_Laboration1 - 2018.11.16 at 10h 35m 55s.xml">
+      <configuration name="test in Laboration1" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="501000" />
+    <option name="totallyTimeSpent" value="1515000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="616" y="159" width="1195" height="935" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="234" width="1195" height="935" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2584562" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26712924" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="0" visible="true" weight="0.32977462" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32977462" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.49787235" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.4970344" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -456,7 +454,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.3295302" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -466,6 +464,7 @@
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Database" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -530,16 +529,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="61" selection-start-line="61" selection-end-line="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="70" column="11" selection-start-line="70" selection-start-column="11" selection-end-line="70" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -578,13 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/game/command/MoveCarCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Saab95.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
@@ -592,10 +574,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="68" column="17" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/CarTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="180">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -604,13 +593,108 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Volvo240Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+        <state relative-caret-position="945">
+          <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../IaoxFarmer-OSBOT-2017-master/src/com/iaox/farmer/node/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="98" column="5" selection-start-line="76" selection-start-column="4" selection-end-line="98" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/game/command/MoveCarCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Scania.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Laboration1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
