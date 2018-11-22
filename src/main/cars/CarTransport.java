@@ -9,6 +9,7 @@ import java.util.Stack;
 
 public class CarTransport extends Car {
 
+    private int maxCars = 10;
     private Stack<Car> cars = new Stack<Car>();
     private Ramp ramp = new Ramp(0, 1);
 
@@ -28,6 +29,14 @@ public class CarTransport extends Car {
     }
 
     @Override
+    public void move(){
+        super.move();
+        for (Car c : cars){
+            c.point = point;
+        }
+    }
+
+    @Override
     public void turnLeft() {
 
     }
@@ -38,11 +47,14 @@ public class CarTransport extends Car {
     }
 
     public void loadCar(Car c){
-        cars.push(c);
+        if (c != this && cars.size() <= maxCars && (c.point.x - point.x <= 1) && (c.point.y - point.y <= 1)) {
+          cars.push(c);
+        }
     }
 
-    public Car unloadCar(){
-        return cars.pop();
+    public void unloadCar(){
+        Car c =  cars.pop();
+        c.point.x = point.x - 1;
     }
 
     public void lowerRamp(){
