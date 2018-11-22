@@ -14,7 +14,7 @@ public class CarTransport extends Car {
     private Ramp ramp = new Ramp(0, 1);
 
     public CarTransport() {
-        super(2, 500, Color.green);
+        super(2, 500, Color.green, Type.TRUCK);
     }
 
     @Override
@@ -34,16 +34,6 @@ public class CarTransport extends Car {
         for (Car c : cars){
             c.point = point;
         }
-    }
-
-    @Override
-    public void turnLeft() {
-
-    }
-
-    @Override
-    public void turnRight() {
-
     }
 
     public void loadCar(Car c){

@@ -55,4 +55,20 @@ public class Perpendicular extends Direction {
         }
         return point;
     }
+
+    /**
+     * Used to turn left
+     */
+    @Override
+    public void turnLeft(){
+        addAngle(3);
+    }
+
+    /**
+     * Used to turn right
+     */
+    @Override
+    public void turnRight(){
+        addAngle(1);
+    }
 }
