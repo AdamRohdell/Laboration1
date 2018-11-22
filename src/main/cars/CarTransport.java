@@ -1,5 +1,6 @@
 package main.cars;
 
+import main.ITransport;
 import main.flatbeds.Ramp;
 
 import java.awt.*;
@@ -7,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-public class CarTransport extends Car {
+public class CarTransport extends Car implements ITransport {
 
     private int maxCars = 10;
     private Stack<Car> cars = new Stack<Car>();
