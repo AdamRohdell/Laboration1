@@ -38,14 +38,16 @@ public class CarTransport extends Car implements ITransport {
     }
 
     public void loadCar(Car c){
-        if (c != this && cars.size() <= maxCars && (c.point.x - point.x <= 1) && (c.point.y - point.y <= 1)) {
+        if (c != this && cars.size() <= maxCars && (c.point.x - point.x <= 1) && (c.point.y - point.y <= 1) && ramp.getCurrentAngle() == 0) {
           cars.push(c);
         }
     }
 
     public void unloadCar(){
-        Car c =  cars.pop();
-        c.point.x = point.x - 1;
+        if (ramp.getCurrentAngle() == 0){
+            Car c =  cars.pop();
+            c.point.x = point.x - 1;
+        }
     }
 
     public void lowerRamp(){
