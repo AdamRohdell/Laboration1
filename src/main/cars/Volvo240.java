@@ -8,7 +8,7 @@ public class Volvo240 extends Car{
     private final static double trimFactor = 1.25;
 
     public Volvo240(){
-        super(4, 100, Color.black);
+        super(4, 100, Color.black, Type.SEDAN);
         this.direction = new Perpendicular(0);
     }
     
@@ -18,19 +18,5 @@ public class Volvo240 extends Car{
      */
     public double speedFactor(){
         return enginePower * 0.01 * trimFactor;
-    }
-
-    /**
-     * Used to turn left
-     */
-    public void turnLeft(){
-        this.direction.addAngle(3);
-    }
-
-    /**
-     * Used to turn right
-     */
-    public void turnRight(){
-        this.direction.addAngle(1);
     }
 }

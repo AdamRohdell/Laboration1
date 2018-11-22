@@ -10,7 +10,7 @@ public class Scania extends Car{
     private Flatbed flatbed;
 
     public Scania(){
-        super(2, 100, Color.blue);
+        super(2, 100, Color.blue, Type.TRUCK);
         this.direction = new Perpendicular(0);
         flatbed = new Flatbed(0,70);
     }
@@ -24,15 +24,6 @@ public class Scania extends Car{
         return this.flatbed;
     }
 
-    @Override
-    public void turnLeft() {
-
-    }
-
-    @Override
-    public void turnRight() {
-
-    }
     @Override
     public void startEngine(){
         tipFlatbed(0);

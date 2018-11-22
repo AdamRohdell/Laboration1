@@ -28,4 +28,6 @@ public abstract class Direction {
     }
     
     public abstract Point move(Point point, double currentSpeed);
+    public abstract void turnLeft();
+    public abstract void turnRight();
 }

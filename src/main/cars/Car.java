@@ -7,10 +7,15 @@ import java.awt.*;
 
 public abstract class Car implements IMoveable {
 
+	enum Type{
+		SEDAN, TRUCK
+	}
+
 	private int nrDoors; // Number of doors on the car
 	protected double enginePower; // Engine power of the car
 	private double currentSpeed; // The current speed of the car
 	private Color color; // Color of the car
+	private Type type;
 	public Point point;
 	protected Direction direction;
 
@@ -19,10 +24,11 @@ public abstract class Car implements IMoveable {
 	 * @param enginePower enter in horsepower
 	 * @param color
 	 */
-	public Car(int nrDoors, double enginePower, Color color) {
+	public Car(int nrDoors, double enginePower, Color color, Type type) {
 		this.nrDoors = nrDoors;
 		this.enginePower = enginePower;
 		this.color = color;
+		this.type = type;
 		stopEngine();
 	}
 
@@ -39,6 +45,15 @@ public abstract class Car implements IMoveable {
 	public Color getColor() {
 		return color;
 	}
+
+	/**
+	 * @return type of car
+	 */
+	public Type getType() {
+		return type;
+	}
+
+
 
 	public void setColor(Color clr) {
 		color = clr;
@@ -131,5 +146,13 @@ public abstract class Car implements IMoveable {
 
 	public int getNrDoors() {
 		return nrDoors;
+	}
+
+	public void turnLeft(){
+		direction.turnLeft();
+	}
+
+	public void turnRight(){
+		direction.turnRight();
 	}
 }
