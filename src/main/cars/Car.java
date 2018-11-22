@@ -1,23 +1,18 @@
 package main.cars;
 
 import main.Direction;
-import main.IMoveable;
 
 import java.awt.*;
 
-public abstract class Car implements IMoveable {
+public abstract class Car extends Vehicle {
 
 	enum Type{
 		SEDAN, TRUCK
 	}
 
 	private int nrDoors; // Number of doors on the car
-	protected double enginePower; // Engine power of the car
-	private double currentSpeed; // The current speed of the car
 	private Color color; // Color of the car
 	private Type type;
-	public Point point;
-	protected Direction direction;
 
 	/**
 	 * @param nrDoors
@@ -32,12 +27,7 @@ public abstract class Car implements IMoveable {
 		stopEngine();
 	}
 
-	/**
-	 * @return current speed of car
-	 */
-	public double getCurrentSpeed() {
-		return currentSpeed;
-	}
+
 
 	/**
 	 * @return color of car
@@ -59,19 +49,7 @@ public abstract class Car implements IMoveable {
 		color = clr;
 	}
 
-	/**
-	 * Used to start the engine
-	 */
-	public void startEngine() {
-		currentSpeed = 0.1;
-	}
 
-	/**
-	 * Used to stop the engine
-	 */
-	public void stopEngine() {
-		currentSpeed = 0;
-	}
 
 	/**
 	 * Abstract method that has to be overriden by new classes that extends car.
@@ -80,39 +58,35 @@ public abstract class Car implements IMoveable {
 	 */
 	public abstract double speedFactor();
 
-	/**
-	 * Used to increment current speed
-	 * @param amount 
-	 */
-	private void incrementSpeed(double amount) {
-		currentSpeed = getCurrentSpeed() + speedFactor() * amount;
-		if (currentSpeed > enginePower) { // currentSpeed can never exceed enginePower. Quick fix. Can probably be done
-											// in a better way
-			currentSpeed = enginePower;
-		}
-	}
-	//hälsning till adam
 
+    /**
+     * Used to increment current speed
+     * @param amount
+     */
+    @Override
+    public void incrementSpeed(double amount) {
+        currentSpeed = getCurrentSpeed() + speedFactor() * amount;
+        if (currentSpeed > enginePower) { // currentSpeed can never exceed enginePower. Quick fix. Can probably be done
+            // in a better way
+            currentSpeed = enginePower;
+        }
+    }
 	/**
 	 * Used to decrement current speed
 	 * 
 	 * @param amount
 	 */
-	private void decrementSpeed(double amount) {
+	@Override
+	public void decrementSpeed(double amount) {
 		currentSpeed = getCurrentSpeed() - speedFactor() * amount;
 		if (currentSpeed < 0) { // currentSpeed can never be less then 0
 			currentSpeed = 0;
 		}
 	}
 
-	/**
-	 * Method that returns current direction of the car
-	 * @return direction
-	 */
-	public Direction getDirection() {
-		return this.direction;
+	public int getNrDoors() {
+		return nrDoors;
 	}
-
 
 
 	/**
@@ -138,21 +112,6 @@ public abstract class Car implements IMoveable {
 			decrementSpeed(amount);
 		}
 	}
-	
-	
-	public void move() {
-		point = direction.move(point, currentSpeed);
-	}
 
-	public int getNrDoors() {
-		return nrDoors;
-	}
 
-	public void turnLeft(){
-		direction.turnLeft();
-	}
-
-	public void turnRight(){
-		direction.turnRight();
-	}
 }

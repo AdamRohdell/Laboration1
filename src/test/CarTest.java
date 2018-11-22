@@ -20,8 +20,9 @@ public class CarTest {
 	@Test
 	public void testGetCurrentSpeed() {
 		Car c = new Volvo240();
+		c.startEngine();
 		c.gas(1);
-		assertEquals(c.getCurrentSpeed(), 1.25, 0);
+		assertEquals(c.getCurrentSpeed(), 1.25, 0.5);
 
 	}
 
