@@ -1,6 +1,4 @@
-package main.flatbeds;
-
-import main.flatbeds.Flatbed;
+package main.vehicles.flatbeds;
 
 public class Ramp extends Flatbed {
 

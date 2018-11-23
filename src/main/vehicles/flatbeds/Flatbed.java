@@ -1,4 +1,4 @@
-package main.flatbeds;
+package main.vehicles.flatbeds;
 
 public class Flatbed {
 
