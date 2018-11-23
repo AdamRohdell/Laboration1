@@ -1,6 +1,6 @@
 package main.vehicles.transport;
 
-import main.flatbeds.Flatbed;
+import main.vehicles.flatbeds.Flatbed;
 import main.Perpendicular;
 import main.vehicles.cars.Car;
 

@@ -2,7 +2,7 @@ package main.vehicles.transport;
 
 import java.util.ArrayList;
 import java.util.List;
-import main.flatbeds.Ramp;
+import main.vehicles.flatbeds.Ramp;
 import main.vehicles.cars.Car;
 
 import java.awt.*;

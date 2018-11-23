@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a427973-45b1-4241-a8b9-f4f8c6a33fd8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/cars/Transport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/CarFerry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/CarFerry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ITransport.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/cars/CarTransport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/cars/CarTransport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/flatbeds/Flatbed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/flatbeds/Flatbed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/flatbeds/Flatbed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/vehicles/flatbeds/Flatbed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/flatbeds/Ramp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/vehicles/flatbeds/Ramp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/vehicles/transport/CarFerry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/vehicles/transport/CarFerry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/vehicles/transport/CarTransport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/vehicles/transport/CarTransport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/vehicles/transport/Scania.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/vehicles/transport/Scania.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/vehicles/transport/Transport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/vehicles/transport/Transport.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -114,22 +115,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2205" />
+          <entry key="java" value="2213" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2205" />
+          <entry key="JAVA" value="2213" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="36" />
+          <entry key="java" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="36" />
+          <entry key="JAVA" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -139,53 +140,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/cars/CarTransport.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="56" column="4" lean-forward="true" selection-start-line="56" selection-start-column="4" selection-end-line="61" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/cars/Transport.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/Volvo240Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="945">
-              <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/ScaniaTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -222,6 +177,7 @@
         <option value="$PROJECT_DIR$/src/main/cars/CarTransport.java" />
         <option value="$PROJECT_DIR$/src/main/CarFerry.java" />
         <option value="$PROJECT_DIR$/src/main/cars/Transport.java" />
+        <option value="$PROJECT_DIR$/src/main/vehicles/transport/CarTransport.java" />
       </list>
     </option>
   </component>
@@ -270,6 +226,21 @@
               <item name="Laboration1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Laboration1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Laboration1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="vehicles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Laboration1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Laboration1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="vehicles" type="462c0819:PsiDirectoryNode" />
               <item name="cars" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -277,13 +248,16 @@
               <item name="Laboration1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="vehicles" type="462c0819:PsiDirectoryNode" />
               <item name="flatbeds" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Laboration1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Laboration1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="vehicles" type="462c0819:PsiDirectoryNode" />
+              <item name="transport" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -300,7 +274,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542965980539" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542966294985" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -431,7 +405,7 @@
       <workItem from="1542451766977" duration="20000" />
       <workItem from="1542619266073" duration="242000" />
       <workItem from="1542891602447" duration="1759000" />
-      <workItem from="1542963763063" duration="2200000" />
+      <workItem from="1542963763063" duration="2478000" />
     </task>
     <servers />
   </component>
@@ -468,11 +442,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5474000" />
+    <option name="totallyTimeSpent" value="5752000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="748" y="90" width="1030" height="1177" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25910932" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -600,7 +573,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/cars/Saab95.java">
+    <entry file="file://$PROJECT_DIR$/src/main/vehicles/cars/Saab95.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
@@ -620,7 +593,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/cars/Volvo240.java">
+    <entry file="file://$PROJECT_DIR$/src/main/vehicles/cars/Volvo240.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
@@ -631,17 +604,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/cars/Scania.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/flatbeds/Flatbed.java">
+    <entry file="file://$PROJECT_DIR$/src/main/vehicles/flatbeds/Flatbed.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="60" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
@@ -673,7 +636,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/flatbeds/Ramp.java">
+    <entry file="file://$PROJECT_DIR$/src/main/vehicles/flatbeds/Ramp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="25" />
@@ -684,29 +647,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/cars/Car.java">
+    <entry file="file://$PROJECT_DIR$/src/main/vehicles/cars/Car.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/CarFerry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#340#341#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/cars/Vehicle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -727,20 +671,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/cars/CarTransport.java">
+    <entry file="file://$PROJECT_DIR$/src/main/vehicles/transport/Transport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="56" column="4" lean-forward="true" selection-start-line="56" selection-start-column="4" selection-end-line="61" selection-end-column="5" />
+        <state relative-caret-position="150">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/cars/Transport.java">
+    <entry file="file://$PROJECT_DIR$/src/main/vehicles/Vehicle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+        <state relative-caret-position="105">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/vehicles/transport/Scania.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/vehicles/transport/CarFerry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/vehicles/transport/CarTransport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

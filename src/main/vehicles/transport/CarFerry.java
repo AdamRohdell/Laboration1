@@ -1,8 +1,7 @@
 package main.vehicles.transport;
 
 import main.vehicles.Vehicle;
-import main.flatbeds.Ramp;
-import main.vehicles.transport.Transport;
+import main.vehicles.flatbeds.Ramp;
 
 public class CarFerry extends Vehicle {
 
