@@ -1,7 +1,6 @@
 package test;
 
-import main.cars.Car;
-import main.cars.Scania;
+import main.vehicles.transport.Scania;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

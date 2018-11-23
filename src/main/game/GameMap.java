@@ -3,7 +3,7 @@ package main.game;
 import java.awt.Point;
 import java.util.ArrayList;
 
-import main.cars.Car;
+import main.vehicles.cars.Car;
 
 public class GameMap {
 
