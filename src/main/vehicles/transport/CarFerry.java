@@ -1,44 +1,33 @@
-package main;
+package main.vehicles.transport;
 
-import main.cars.Car;
-import main.cars.Vehicle;
+import main.vehicles.Vehicle;
 import main.flatbeds.Ramp;
+import main.vehicles.transport.Transport;
 
-import java.util.ArrayList;
-import java.util.List;
+public class CarFerry extends Vehicle {
 
-public class CarFerry extends Vehicle implements ITransport {
-
-    private int maxCars = 50;
-    private List<Car> cars = new ArrayList<Car>();
     private Ramp ramp = new Ramp(0, 1);
+    private Transport transport;
 
-    @Override
-    public void raiseRamp() {
-        ramp.raiseRamp();
+    public CarFerry(){
+        transport = new Transport(50, true ,this.point, this.ramp);
     }
 
-    @Override
+    /**
+     * Method to raise ramp
+     */
+    public void raiseRamp(){
+        ramp.raiseRamp();
+    }
+    /**
+     * Method to lower the ramp
+     */
     public void lowerRamp() {
         if (currentSpeed == 0){
             ramp.lowerRamp();
         }
     }
 
-    @Override
-    public void loadCar(Car c) {
-        if (cars.size() <= maxCars && (c.point.x - point.x <= 1) && (c.point.y - point.y <= 1) && ramp.getCurrentAngle() == 0) {
-            cars.add(c);
-        }
-    }
-
-    @Override
-    public void unloadCar() {
-        if (ramp.getCurrentAngle() == 0){
-            Car c =  cars.remove(0);
-            c.point.x = point.x - 1;
-        }
-    }
 
     @Override
     public void incrementSpeed(double amount) {

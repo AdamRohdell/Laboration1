@@ -1,11 +1,12 @@
-package main.cars;
+package main.vehicles.transport;
 
 import main.flatbeds.Flatbed;
 import main.Perpendicular;
+import main.vehicles.cars.Car;
 
 import java.awt.*;
 
-public class Scania extends Car{
+public class Scania extends Car {
 
     private Flatbed flatbed;
 

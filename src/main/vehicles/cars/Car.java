@@ -1,12 +1,12 @@
-package main.cars;
+package main.vehicles.cars;
 
-import main.Direction;
+import main.vehicles.Vehicle;
 
 import java.awt.*;
 
 public abstract class Car extends Vehicle {
 
-	enum Type{
+	public enum Type{
 		SEDAN, TRUCK
 	}
 

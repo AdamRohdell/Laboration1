@@ -1,4 +1,4 @@
-package main.cars;
+package main.vehicles.cars;
 import main.Perpendicular;
 
 import java.awt.*;

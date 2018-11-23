@@ -1,4 +1,4 @@
-package main.cars;
+package main.vehicles;
 
 import main.Direction;
 import main.IMoveable;
