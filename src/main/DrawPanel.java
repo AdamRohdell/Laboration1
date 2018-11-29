@@ -4,6 +4,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Paths;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 
@@ -12,14 +13,14 @@ import javax.swing.*;
 public class DrawPanel extends JPanel{
 
     // Just a single image, TODO: Generalize
-    BufferedImage volvoImage;
+    BufferedImage carImage;
     // To keep track of a singel cars position
-    Point volvoPoint = new Point();
+    Point carPoint = new Point();
 
     // TODO: Make this general for all cars
     public void moveIt(int x, int y){
-        volvoPoint.x = x;
-        volvoPoint.y = y;
+        carPoint.x = x;
+        carPoint.y = y;
     }
 
     // Initializes the panel and reads the images
@@ -34,12 +35,14 @@ public class DrawPanel extends JPanel{
             // Rememember to rightclick src New -> Package -> name: pics -> MOVE *.jpg to pics.
             // if you are starting in IntelliJ.
             // Linux users need to modify \ to / in path string
-            volvoImage = ImageIO.read(new File("src/pics/Volvo240.jpg"));
+            System.out.println(Paths.get("").toAbsolutePath().toString());
+
+
+            volvoImage = ImageIO.read(new File("Laboration1\\src\\pics\\Volvo240.jpg"));
         } catch (IOException ex)
         {
             ex.printStackTrace();
         }
-
     }
 
     // This method is called each time the panel updates/refreshes/repaints itself
@@ -47,6 +50,6 @@ public class DrawPanel extends JPanel{
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        g.drawImage(volvoImage, volvoPoint.x, volvoPoint.y, null); // see javadoc for more info on the parameters
+        g.drawImage(volvoImage, carPoint.x, carPoint.y, null); // see javadoc for more info on the parameters
     }
 }
