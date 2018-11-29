@@ -1,6 +1,7 @@
 package main.controllers;
 
 import main.vehicles.cars.*;
+import main.vehicles.transport.Scania;
 import main.views.CarView;
 
 import javax.swing.*;
@@ -37,6 +38,14 @@ public class CarController {
 
         cc.cars.add(new Volvo240());
 
+        Saab95 saab = new Saab95();
+        saab.point.setLocation(0,100);
+        cc.cars.add(saab);
+
+        Scania scania = new Scania();
+        scania.point.setLocation(0,200);
+        cc.cars.add(scania);
+
         // Start a new view and send a reference of self
         cc.frame = new CarView("CarSim 1.0", cc);
 
@@ -57,7 +66,6 @@ public class CarController {
                 if (calculateIfOutOfBounds(car)) {
                     changeDirection(car);
                 }
-                frame.getDrawPanel().moveIt(x, y);
 
                 // repaint() calls the paintComponent method of the panel
                 frame.getDrawPanel().repaint();
@@ -105,5 +113,9 @@ public class CarController {
         for (Car car : cars){
             car.stopEngine();
         }
+    }
+
+    public ArrayList<Car> getCars(){
+        return cars;
     }
 }

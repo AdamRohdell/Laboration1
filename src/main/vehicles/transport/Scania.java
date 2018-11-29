@@ -18,7 +18,7 @@ public class Scania extends Car {
 
     @Override
     public double speedFactor() {
-        return 0;
+        return 1;
     }
 
     public Flatbed getFlatbed(){

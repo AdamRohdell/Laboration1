@@ -9,6 +9,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Locale;
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -17,24 +18,15 @@ import javax.swing.*;
 
 public class DrawPanel extends JPanel {
 
-    // Just a single image, TODO: Generalize
-    BufferedImage volvoImage;
-    BufferedImage scaniaImage;
-    BufferedImage saabImage;
-    // To keep track of a singel cars position
-    Point carPoint = new Point();
 
-    // TODO: Make this general for all cars
-    public void moveIt(int x, int y){
-        carPoint.x = x;
-        carPoint.y = y;
-    }
+    ArrayList<Car> cars;
 
     // Initializes the panel and reads the images
-    public DrawPanel(int x, int y) {
+    public DrawPanel(int x, int y, ArrayList<Car> cars) {
         this.setDoubleBuffered(true);
         this.setPreferredSize(new Dimension(x, y));
         this.setBackground(Color.green);
+        this.cars = cars;
         // Print an error message in case file is not found with a try/catch block
 
             // You can remove the "src\\pics" part if running outside of IntelliJ and
@@ -42,9 +34,7 @@ public class DrawPanel extends JPanel {
             // Rememember to rightclick src New -> Package -> name: pics -> MOVE *.jpg to pics.
             // if you are starting in IntelliJ.
             // Linux users need to modify \ to / in path string
-            saabImage = getImage(new Saab95());
-            scaniaImage = getImage(new Scania());
-            volvoImage = getImage(new Volvo240());
+
     }
 
     // This method is called each time the panel updates/refreshes/repaints itself
@@ -52,7 +42,9 @@ public class DrawPanel extends JPanel {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        g.drawImage(volvoImage, carPoint.x, carPoint.y, null); // see javadoc for more info on the parameters
+        cars.forEach(car -> {
+            g.drawImage(getImage(car), car.point.x, car.point.y, null); // see javadoc for more info on the parameters
+        });
     }
 
 
