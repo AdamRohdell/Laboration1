@@ -1,5 +1,7 @@
 package main.vehicles.cars;
+
 import main.Perpendicular;
+import main.vehicles.cars.Car;
 
 import java.awt.*;
 
@@ -8,7 +10,7 @@ public class Volvo240 extends Car{
     private final static double trimFactor = 1.25;
 
     public Volvo240(){
-        super(4, 100, Color.black, Type.SEDAN);
+        super(4, 100, Color.black, Car.Type.SEDAN);
         this.direction = new Perpendicular(0);
     }
     
