@@ -59,7 +59,6 @@ public class CarController {
     private class TimerListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             for (Car car : cars) {
-                System.out.println(frame.getWidth());
                 car.move();
                 int x = (int) Math.round(car.point.x);
                 int y = (int) Math.round(car.point.y);
@@ -79,7 +78,6 @@ public class CarController {
 
 
     private boolean calculateIfOutOfBounds(Car car){
-        System.out.println(frame.getWidth());
         int carWidth = frame.getDrawPanel().getImage(car).getWidth();
         if (car.point.x + carWidth>= frame.getWidth() || car.point.x < 0){
             return true;
@@ -117,5 +115,43 @@ public class CarController {
 
     public ArrayList<Car> getCars(){
         return cars;
+    }
+    
+    public void setTurboOn(){
+        Saab95 saab;
+        for (Car car : cars){
+            if (car.getClass() == new Saab95().getClass()){
+                saab = (Saab95)car;
+                saab.turboOn = true;
+            }
+        }
+    }
+    public void setTurboOff(){
+        Saab95 saab;
+        for (Car car : cars){
+            if (car.getClass() == new Saab95().getClass()){
+                saab = (Saab95)car;
+                saab.turboOn = false;
+            }
+        }
+    }
+    public void liftBeds(){
+        Scania scania;
+        for (Car car : cars){
+            if (car.getClass() == new Scania().getClass()){
+                scania = (Scania)car;
+                scania.tipFlatbed(70);
+            }
+        }
+    }
+
+    public void lowerBeds(){
+        Scania scania;
+        for (Car car : cars){
+            if (car.getClass() == new Scania().getClass()){
+                scania = (Scania)car;
+                scania.tipFlatbed(0);
+            }
+        }
     }
 }

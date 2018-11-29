@@ -52,7 +52,7 @@ public class DrawPanel extends JPanel {
         Windows, MacOS, Linux;
     }
 
-    
+
 
     private static OSType detectedOS;
 
