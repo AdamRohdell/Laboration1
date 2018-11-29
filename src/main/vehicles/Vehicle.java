@@ -11,6 +11,10 @@ public abstract class Vehicle implements IMoveable {
     protected Direction direction;
     public Point point;
 
+
+    public Vehicle(){
+        this.point = new Point(0,0);
+    }
     /**
      * @return current speed of vehicle
      */

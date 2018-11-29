@@ -1,14 +1,16 @@
 package main.vehicles.transport;
 
+import main.Perpendicular;
 import main.vehicles.Vehicle;
 import main.vehicles.flatbeds.Ramp;
 
 public class CarFerry extends Vehicle {
 
-    private Ramp ramp = new Ramp(0, 1);
-    private Transport transport;
+    public Ramp ramp = new Ramp(0, 1);
+    public Transport transport;
 
     public CarFerry(){
+        this.direction = new Perpendicular(0);
         transport = new Transport(50, true ,this.point, this.ramp);
     }
 

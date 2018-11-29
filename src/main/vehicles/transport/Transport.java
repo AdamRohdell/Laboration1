@@ -20,13 +20,15 @@ public class Transport {
     public Transport(int maxCars, boolean unloadFirstCar, Point point, Ramp ramp){
         this.maxCars = maxCars;
         this.unloadFirstCar = unloadFirstCar;
+        this.point = point;
+        this.ramp = ramp;
     }
     /**
      * Method to load the last car that was loaded. The car that will be loaded has to be within a distance of 1 unit.
      * @param c that shall be loaded
      */
     public void loadCar(Car c){
-        if (c.getType() != Car.Type.TRUCK && cars.size() <= maxCars && (c.point.x - point.x <= 1) && (c.point.y - point.y <= 1) && ramp.getCurrentAngle() == 0) {
+        if (c.getType() != Car.Type.TRUCK && cars.size() < maxCars && (c.point.x - point.x <= 1) && (c.point.y - point.y <= 1) && ramp.getCurrentAngle() == 0) {
             cars.add(c);
         }
     }
@@ -50,5 +52,9 @@ public class Transport {
             Car c =  cars.get(index);
             c.point.x = point.x - 1;
         }
+    }
+
+    public List<Car> getCars(){
+        return cars;
     }
 }
