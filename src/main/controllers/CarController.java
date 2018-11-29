@@ -50,14 +50,33 @@ public class CarController {
     private class TimerListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             for (Car car : cars) {
+                System.out.println(frame.getWidth());
                 car.move();
                 int x = (int) Math.round(car.point.x);
                 int y = (int) Math.round(car.point.y);
+                if (calculateIfOutOfBounds(car)) {
+                    changeDirection(car);
+                }
                 frame.getDrawPanel().moveIt(x, y);
+
                 // repaint() calls the paintComponent method of the panel
                 frame.getDrawPanel().repaint();
             }
         }
+    }
+
+    private void changeDirection(Car c){
+        c.getDirection().addAngle(2);
+    }
+
+
+    private boolean calculateIfOutOfBounds(Car car){
+        System.out.println(frame.getWidth());
+        int carWidth = frame.getDrawPanel().getImage(car).getWidth();
+        if (car.point.x + carWidth>= frame.getWidth() || car.point.x < 0){
+            return true;
+        }
+        return false;
     }
 
     // Calls the gas method for each car once
@@ -66,6 +85,25 @@ public class CarController {
         for (Car car : cars
                 ) {
             car.gas(gas);
+        }
+    }
+
+    public void brake(int amount){
+        double brake = (double) amount / 100;
+        for (Car car : cars){
+            car.brake(brake);
+        }
+    }
+
+    public void startCars(){
+        for (Car car : cars){
+            car.startEngine();
+        }
+    }
+
+    public void stopCars(){
+        for (Car car : cars){
+            car.stopEngine();
         }
     }
 }
