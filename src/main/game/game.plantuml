@@ -1,0 +1,266 @@
+@startuml
+
+title __GAME's Class Diagram__\n
+
+  package main {
+    package main.game {
+      class CarGame {
+          - commands : ArrayList<Command>
+          ~ run : boolean
+          - sc : Scanner
+          ~ frame : JFrame
+          {static} + main()
+          ~ CarGame()
+          - initializeCommands()
+          - gameLoop()
+          - executeCommand()
+          + paint()
+          - printCommands()
+      }
+    }
+  }
+  
+
+  class AWTTreeLock {
+      ~ AWTTreeLock()
+  }
+  
+
+  abstract class AccessibleAWTComponent {
+      {static} - serialVersionUID : long
+      - propertyListenersCount : int
+      # accessibleAWTComponentHandler : ComponentListener
+      # accessibleAWTFocusHandler : FocusListener
+      # AccessibleAWTComponent()
+      + addPropertyChangeListener()
+      + removePropertyChangeListener()
+      + getAccessibleName()
+      + getAccessibleDescription()
+      + getAccessibleRole()
+      + getAccessibleStateSet()
+      + getAccessibleParent()
+      + getAccessibleIndexInParent()
+      + getAccessibleChildrenCount()
+      + getAccessibleChild()
+      + getLocale()
+      + getAccessibleComponent()
+      + getBackground()
+      + setBackground()
+      + getForeground()
+      + setForeground()
+      + getCursor()
+      + setCursor()
+      + getFont()
+      + setFont()
+      + getFontMetrics()
+      + isEnabled()
+      + setEnabled()
+      + isVisible()
+      + setVisible()
+      + isShowing()
+      + contains()
+      + getLocationOnScreen()
+      + getLocation()
+      + setLocation()
+      + getBounds()
+      + setBounds()
+      + getSize()
+      + setSize()
+      + getAccessibleAt()
+      + isFocusTraversable()
+      + requestFocus()
+      + addFocusListener()
+      + removeFocusListener()
+  }
+  
+
+  class AccessibleAWTComponentHandler {
+      # AccessibleAWTComponentHandler()
+      + componentHidden()
+      + componentShown()
+      + componentMoved()
+      + componentResized()
+  }
+  
+
+  class AccessibleAWTFocusHandler {
+      # AccessibleAWTFocusHandler()
+      + focusGained()
+      + focusLost()
+  }
+  
+
+  enum BaselineResizeBehavior {
+    CONSTANT_ASCENT
+    CONSTANT_DESCENT
+    CENTER_OFFSET
+    OTHER
+  }
+  
+
+  class BltBufferStrategy {
+      # caps : BufferCapabilities
+      # backBuffers : VolatileImage[]
+      # validatedContents : boolean
+      # width : int
+      # height : int
+      - insets : Insets
+      # BltBufferStrategy()
+      + dispose()
+      # createBackBuffers()
+      + getCapabilities()
+      + getDrawGraphics()
+      ~ getBackBuffer()
+      + show()
+      ~ showSubRegion()
+      # revalidate()
+      ~ revalidate()
+      + contentsLost()
+      + contentsRestored()
+  }
+  
+
+  class BltSubRegionBufferStrategy {
+      # BltSubRegionBufferStrategy()
+      + show()
+      + showIfNotLost()
+  }
+  
+
+  class DummyRequestFocusController {
+      - DummyRequestFocusController()
+      + acceptRequestFocus()
+  }
+  
+
+  class FlipBufferStrategy {
+      # numBuffers : int
+      # caps : BufferCapabilities
+      # drawBuffer : Image
+      # drawVBuffer : VolatileImage
+      # validatedContents : boolean
+      ~ width : int
+      ~ height : int
+      # FlipBufferStrategy()
+      # createBuffers()
+      - updateInternalBuffers()
+      # getBackBuffer()
+      # flip()
+      ~ flipSubRegion()
+      # destroyBuffers()
+      + getCapabilities()
+      + getDrawGraphics()
+      # revalidate()
+      ~ revalidate()
+      + contentsLost()
+      + contentsRestored()
+      + show()
+      ~ showSubRegion()
+      + dispose()
+  }
+  
+
+  class FlipSubRegionBufferStrategy {
+      # FlipSubRegionBufferStrategy()
+      + show()
+      + showIfNotLost()
+  }
+  
+
+  class ProxyCapabilities {
+      - orig : BufferCapabilities
+      - ProxyCapabilities()
+  }
+  
+
+  enum VSyncType {
+    VSYNC_DEFAULT
+    VSYNC_ON
+    VSYNC_OFF
+    id
+  }
+  
+
+  class FlipContents {
+      {static} - I_UNDEFINED : int
+      {static} - I_BACKGROUND : int
+      {static} - I_PRIOR : int
+      {static} - I_COPIED : int
+      {static} - NAMES : String[]
+      {static} + UNDEFINED : FlipContents
+      {static} + BACKGROUND : FlipContents
+      {static} + PRIOR : FlipContents
+      {static} + COPIED : FlipContents
+      - FlipContents()
+  }
+  
+
+  class SingleBufferStrategy {
+      - caps : BufferCapabilities
+      + SingleBufferStrategy()
+      + getCapabilities()
+      + getDrawGraphics()
+      + contentsLost()
+      + contentsRestored()
+      + show()
+  }
+  
+
+  package main {
+    package main.game {
+      class GameMap {
+          + maxX : int
+          + maxY : int
+          + points : ArrayList<Point>
+          - cars : ArrayList<Car>
+          + GameMap()
+          + addCar()
+          + getCars()
+          + getSymbol()
+      }
+    }
+  }
+  
+
+  CarGame -up-|> Component
+  CarGame o-- GameMap : gameMap
+  CarGame o-- DrawMap : drawMap
+  CarGame +-down- AWTTreeLock
+  CarGame +-down- AccessibleAWTComponent
+  CarGame +-down- BaselineResizeBehavior
+  CarGame +-down- BltBufferStrategy
+  CarGame +-down- BltSubRegionBufferStrategy
+  CarGame +-down- DummyRequestFocusController
+  CarGame +-down- FlipBufferStrategy
+  CarGame +-down- FlipSubRegionBufferStrategy
+  CarGame +-down- ProxyCapabilities
+  CarGame +-down- SingleBufferStrategy
+  AccessibleAWTComponent -up-|> Serializable
+  AccessibleAWTComponent -up-|> AccessibleComponent
+  AccessibleAWTComponent -up-|> AccessibleContext
+  AccessibleAWTComponent +-down- AccessibleAWTComponentHandler
+  AccessibleAWTComponent +-down- AccessibleAWTFocusHandler
+  AccessibleAWTComponentHandler -up-|> ComponentListener
+  AccessibleAWTFocusHandler -up-|> FocusListener
+  BltBufferStrategy -up-|> BufferStrategy
+  BltSubRegionBufferStrategy -up-|> SubRegionShowable
+  BltSubRegionBufferStrategy -up-|> BltBufferStrategy
+  DummyRequestFocusController -up-|> RequestFocusController
+  FlipBufferStrategy -up-|> BufferStrategy
+  FlipSubRegionBufferStrategy -up-|> SubRegionShowable
+  FlipSubRegionBufferStrategy -up-|> FlipBufferStrategy
+  ProxyCapabilities -up-|> ExtendedBufferCapabilities
+  ProxyCapabilities +-down- VSyncType
+  ProxyCapabilities +-down- FlipContents
+  FlipContents -up-|> AttributeValue
+  SingleBufferStrategy -up-|> BufferStrategy
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
