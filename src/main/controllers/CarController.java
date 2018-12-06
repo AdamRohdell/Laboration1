@@ -60,12 +60,9 @@ public class CarController {
         public void actionPerformed(ActionEvent e) {
             for (Car car : cars) {
                 car.move();
-                int x = (int) Math.round(car.point.x);
-                int y = (int) Math.round(car.point.y);
                 if (calculateIfOutOfBounds(car)) {
                     changeDirection(car);
                 }
-
                 // repaint() calls the paintComponent method of the panel
                 frame.getDrawPanel().repaint();
             }
