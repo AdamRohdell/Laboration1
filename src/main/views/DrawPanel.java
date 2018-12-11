@@ -1,4 +1,4 @@
-package main;
+package main.views;
 
 import main.vehicles.cars.Car;
 import main.vehicles.cars.Saab95;

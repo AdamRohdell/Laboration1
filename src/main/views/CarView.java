@@ -1,6 +1,5 @@
 package main.views;
 
-import main.DrawPanel;
 import main.controllers.CarController;
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
